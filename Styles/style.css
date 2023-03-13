@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    scroll-behavior: smooth;
+}
+
+/* Nav bar for mobile screens */
+@media (max-width: 800px){
+
+    .navBar{
+        display: none;
+    }
+
+    .navBarCollapse{
+        position:fixed;
+        top:0;
+        width: 100%;
+        z-index:100;
+    }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+  
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+  
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        list-style: none;
+    } 
+    .panel li{
+        padding: 5%;
+    }
+    .panel li a{
+        text-decoration: none;
+    }
+
+    .homeNav:hover + .homeNav a{
+        font-size: 115%;
+        color: black;
+        background-color: rgb(208, 160, 216);
+        border-radius: 5%;
+    }
+    
+
+
+}
+/* Nav bar for desktop screens */
+@media (min-width: 801px){
+
+    .navBarCollapse{
+        display: none;
+    }
+
+    .navBar{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: transparent;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 6%;
+        background-color: rgb(43, 43, 43);
+        min-height: 5vh;
+    }
+    
+    .navBar a{
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    
+    .navBar a:visited{
+        text-decoration: none;
+    }
+    
+    
+    .homeNav:hover{
+        font-size: 115%;
+        color: black;
+        background-color: rgb(208, 160, 216);
+        border-radius: 5%;
+    }
+    
+    .aboutNav:hover{
+        font-size: 115%;
+        color: black;
+        background-color: rgb(92, 153, 202);
+        border-radius: 5%;
+    }
+    
+    .projectsNav:hover{
+        font-size: 115%;
+        color: black;
+        background-color: rgb(181, 123, 231);
+        border-radius: 5%;
+    }
+    
+    .technologyNav:hover{
+        font-size: 115%;
+        color: black;
+        background-color: rgb(123, 231, 133);
+        border-radius: 5%;
+    }
+    
+    .contactNavLi{
+        margin-right: 2%;
+    }
+    .contactNav:hover{
+        font-size: 115%;
+        color: black;
+        background-color: rgb(85, 154, 219);
+        border-radius: 5%;
+    }
+}
+
+
+/* Landing image for mobile screens */
+@media (max-width: 800px){
+    .landingImage{
+        background-image: linear-gradient(120deg, rgb(0, 0, 0), rgb(185, 105, 199));
+        min-height: 100vh;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    .landingImage div{
+        background-color: transparent;
+        font-size: 130%;
+        text-align: center;
+        word-spacing: 100%;
+    }
+    .landingImage div a{
+        margin-top: 10vh;
+        background-color: rgb(208, 160, 216);
+        color: black;
+        padding: 5px;
+        border-radius: 2%;
+    }
+}
+/* Landing image for desktop screens */
+@media (min-width: 801px){
+    .landingImage{
+        background-image: linear-gradient(120deg, rgb(0, 0, 0), rgb(185, 105, 199));
+        min-height: 100vh;
+        font-size: 200%;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    .landingImage div{
+        background-color: transparent;
+        font-size: 130%;
+    }
+    .landingImage div a{
+        margin-top: 10vh;
+        background-color: rgb(208, 160, 216);
+        color: black;
+        padding: 5px;
+        border-radius: 2%;
+    }
+}
+
+
+/* About me section for mobile screens */
+@media (max-width: 800px){
+    .aboutMe{
+        margin-top: 5%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .aboutMeTitle div{
+        margin-top: 15px;
+    }
+    .aboutMeTitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 230%;
+        font-weight: 600;
+        margin-bottom: 10%;
+    }
+    .aboutMeTitle a{
+        padding: 5px;
+        background-color:  rgb(92, 153, 202);
+        color: black;
+        border-radius: 2%;
+    }
+    
+    .aboutMeContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutMeContent p{
+        margin-right: 3%;
+        max-width: 75%;
+    }
+    .aboutMeContent img{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        min-width: 20%;
+        max-width: 60%;
+        box-shadow: 18px 18px 0px  rgb(92, 153, 202);
+    }
+}
+/* About me section for desktop size screens */
+@media (min-width: 801px){
+.aboutMe{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMeTitle div{
+    margin-top: 10px;
+}
+.aboutMeTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 230%;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+.aboutMeTitle a{
+    padding: 5px;
+    background-color:  rgb(92, 153, 202);
+    color: black;
+    border-radius: 2%;
+}
+
+.aboutMeContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.aboutMeContent p{
+    margin-right: 3%;
+    max-width: 30%;
+}
+.aboutMeContent img{
+    min-width: 20%;
+    max-width: 30%;
+    box-shadow: 30px 30px 0px  rgb(92, 153, 202);
+}
+}
+
+/* Technology section for mobile size screens */
+@media (max-width: 800px){
+
+    .technologyBig{
+        display: none;
+    }
+
+    .technologySmall{
+        margin-top: 5%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .technologyTitle div{
+        margin-top: 10px;
+    }
+    .technologyTitle{
+        font-size: 230%;
+        font-weight: 600;
+        margin-bottom: 4%;
+        padding: 5px;
+        background-color: rgb(123, 231, 133);
+        color: black;
+        border-radius: 2%;
+    }
+    
+    .technologyRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .technologyRow ul{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .technologyContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        min-width: 80%;
+    }
+    .technologyContent li{
+        background-color: rgb(56, 56, 56);
+        border-radius: 5%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        color: white;
+        font-size: 120%;
+        margin: 3%;
+        min-width: 80%;
+        min-height: 7%;
+        padding: 5%;
+    }
+    .technologyContent li img{
+        background-color: rgb(56, 56, 56);
+        border-radius: 5%;
+        padding: 10px;
+    }
+    .technologyContent img{
+        min-width: 20%;
+        max-width: 30%;
+    }
+    
+    
+    .technologyContent li div{
+        margin: 10%;
+    }
+    .javaProf{
+        background-color: rgb(123, 231, 133);
+        min-width: 40%;
+        min-height: 13%;
+        margin-left: 10%;
+        border-radius: 10%;
+    }
+    .jsProf{
+        background-color: rgb(123, 231, 133);
+        min-width: 15%;
+        min-height: 13%;
+        margin-left: 10%;
+        border-radius: 10%;
+    }
+    .htmlProf{
+        background-color: rgb(123, 231, 133);
+        min-width: 30%;
+        min-height: 13%;
+        margin-left: 10%;
+        border-radius: 10%;
+    }
+    .cssProf{
+        background-color: rgb(123, 231, 133);
+        min-width: 40%;
+        min-height: 13%;
+        margin-left: 10%;
+        border-radius: 10%;
+    }
+}
+/* Technology section for desktop size screens */
+@media (min-width: 801px){
+
+    .technologySmall{
+        display: none;
+    }
+
+    .technologyBig{
+        margin-top: 7%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .technologyTitle div{
+        margin-top: 10px;
+    }
+    .technologyTitle{
+        font-size: 230%;
+        font-weight: 600;
+        margin-bottom: 4%;
+        padding: 5px;
+        background-color: rgb(123, 231, 133);
+        color: black;
+        border-radius: 2%;
+    }
+    
+    .technologyRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .technologyRow ul{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .technologyContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        min-width: 80%;
+    }
+    .technologyContent li{
+        background-color: rgb(56, 56, 56);
+        border-radius: 5%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        color: white;
+        font-size: 120%;
+        margin: 3%;
+        min-width: 80%;
+        min-height: 15%;
+        padding: 5%;
+    }
+    .technologyContent li img{
+        background-color: rgb(56, 56, 56);
+        border-radius: 5%;
+        padding: 10px;
+    }
+    .technologyContent img{
+        min-width: 20%;
+        max-width: 30%;
+    }
+    
+    
+    .technologyContent li div{
+        margin: 10%;
+    }
+    .javaProf{
+        background-color: rgb(123, 231, 133);
+        min-width: 50%;
+        min-height: 13%;
+        margin-left: 10%;
+        border-radius: 10%;
+    }
+    .jsProf{
+        background-color: rgb(123, 231, 133);
+        min-width: 20%;
+        min-height: 13%;
+        margin-left: 10%;
+        border-radius: 10%;
+    }
+    .htmlProf{
+        background-color: rgb(123, 231, 133);
+        min-width: 40%;
+        min-height: 13%;
+        margin-left: 10%;
+        border-radius: 10%;
+    }
+    .cssProf{
+        background-color: rgb(123, 231, 133);
+        min-width: 50%;
+        min-height: 13%;
+        margin-left: 10%;
+        border-radius: 10%;
+    }
+}
+
+
+.contactMe{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMeTitle div{
+    margin-top: 10px;
+}
+.contactMeTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 230%;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+.contactMeTitle a{
+    padding: 5px;
+    background-color: rgb(85, 154, 219);
+    color: black;
+    border-radius: 2%;
+}
+
+.contactMeContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contactMeContent p{
+    margin-right: 3%;
+    max-width: 30%;
+}
+.contactMeContent img{
+    min-width: 5%;
+    max-width: 6%;
+    padding: 1%;
+    transition: .5s;
+}
+.contactMeContent img:hover{
+    min-width: 6%;
+    max-width: 7%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+
+
+
+
+.emailDiv{
+    font-size: 130%;
+    margin-top: 3%;
+    background-color: rgb(85, 154, 219);
+    color: black;
+    padding: 1%;
+    border-radius: 2%;
+    transition: 1s;
+}

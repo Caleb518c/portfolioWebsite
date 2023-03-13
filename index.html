@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body id="home">
+    
+<ul class="navBar">
+    <li><a href="#home" class="homeNav">Home</a></li>
+    <li><a href="#about" class="aboutNav">About</a></li>
+    <li><a href="" class="projectsNav">Projects</a></li>
+    <li><a href="#technology" class="technologyNav">Technology</a></li>
+    <li><a href="#extras" class="technologyNav">Extras</a></li>
+    <li class="contactNavLi"><a href="#contact" class="contactNav">Contact</a></li>
+</ul>
+
+<div class="navBarCollapse">
+    <button class="accordion">Open Me</button>
+    <ul class="panel">
+        <li class="homeNav"><a href="#home" class="homeNavA">Home</a></li>
+        <li><a href="#about" class="aboutNav">About</a></li>
+        <li><a href="" class="projectsNav">Projects</a></li>
+        <li><a href="#technology" class="technologyNav">Technology</a></li>
+        <li><a href="#extras" class="technologyNav">Extras</a></li>
+        <li class="contactNavLi"><a href="" class="contactNav">Contact</a></li>
+    </ul>
+</div>
+
+
+
+<div class="landingImage">
+    <div>
+        <div>Hi! I'm <a>Caleb</a> Clapper</div>
+        <div class="smallText">A front-end developer</div>
+    </div>
+</div>
+
+<div id="about"></div>
+
+<div class="aboutMe">
+    <div class="aboutMeTitle">
+        <div><a>About</a> Me</div>
+    </div>
+    <div class="aboutMeContent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eum cupiditate ut cum esse delectus voluptate. Excepturi 
+             veritatis adipisci, perferendis dolore illo tempora cum dolor
+              explicabo laborum temporibus fugiat praesentium voluptatum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <img src="portrait.jpg" alt="">
+    </div>
+</div>
+
+
+<div id="technology"></div>
+
+<div class="technologyBig">
+    <div class="technologyTitle">Technologies</div>
+    <div class="technologyRow">
+        <ul class="technologyContent">
+            <li><img src="java-logo.png" alt="" width="150">Java</li>
+            <li><img src="java-script.png" alt="" width="100">JavaScript</li>
+            <li><img src="html.png" alt="" width="150">HTML</li>
+            <li><img src="css-3.png" alt="" width="150">CSS</li>
+        </ul>
+        <ul class="technologyContent">
+            <li>Profiency <div class="javaProf"></div></li>
+            <li>Profiency <div class="jsProf"></div</li>
+            <li>Profiency <div class="htmlProf"></div</li>
+            <li>Profiency <div class="cssProf"></div</li>
+        </ul>
+    </div>
+</div>
+
+<div class="technologySmall">
+    <div class="technologyTitle">Technologies</div>
+    <div class="technologyRow">
+        <ul class="technologyContent">
+            <li><img src="java-logo.png" alt="" width="150">Java</li>
+            <li>Profiency <div class="javaProf"></div></li>
+            <li><img src="java-script.png" alt="" width="100">JavaScript</li>
+            <li>Profiency <div class="jsProf"></div</li>
+            <li><img src="html.png" alt="" width="150">HTML</li>
+            <li>Profiency <div class="htmlProf"></div</li>
+            <li><img src="css-3.png" alt="" width="150">CSS</li>
+            <li>Profiency <div class="cssProf"></div</li>
+        </ul>
+    </div>
+</div>
+
+<div class="contactMe" id="contact">
+    <div class="contactMeTitle">
+        <div><a>Contact</a> Me</div>
+    </div>
+    <div class="contactMeContent">
+        <img onclick="githubGoto()" src="github.png" alt="">
+        <img onclick="linkedinGoto()" src="linkedin.png" alt="">
+        <img onclick="showEmail()" src="email.png" alt="">
+    </div>
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
